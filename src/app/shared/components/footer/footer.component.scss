@@ -1,0 +1,61 @@
+.docs-footer {
+    padding: 12px;
+    font-size: 12px;
+}
+
+.docs-footer {
+    background: #3f51b5;
+    color: #fff;
+}
+
+.docs-footer-list {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 8px;
+    @media screen and (max-width: 884px) {
+        flex-direction: column;
+    }
+}
+
+.docs-footer-logo {
+    flex: 1;
+}
+
+.docs-footer-angular-logo {
+    height: 50px;
+}
+
+.docs-footer-version .angular-material-logo {
+    height: 40px;
+    margin: 10px 0 10px 16px;
+}
+
+.docs-footer-version {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.docs-footer-copyright {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-width: 225px;
+    margin-top: 16px;
+    @media (min-width: 885px) {
+        margin-top: 0;
+    }
+}
+
+.docs-footer {
+    background: #3f51b5;
+    color: #fff;
+}
+
+.docs-footer-logo span a {
+    font-size: 16px;
+    padding: 0;
+}
