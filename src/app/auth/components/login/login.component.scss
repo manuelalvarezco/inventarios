@@ -1,0 +1,13 @@
+.example-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-container__form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}

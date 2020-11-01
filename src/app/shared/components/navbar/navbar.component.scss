@@ -25,12 +25,14 @@
     .docs-navbar-show-small {
         background: #3f51b5;
         display: none;
+        overflow: auto;
         @media (max-width: 720px) {
             display: flex;
         }
     }
     
     .docs-navbar-link {
+        min-width: 100px;
         text-decoration: inherit;
         flex: 1;
     }

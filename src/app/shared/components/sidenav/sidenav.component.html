@@ -1,14 +1,21 @@
 <mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-        <p>Auto-resizing sidenav</p>
-        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-        <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button>
+    <mat-drawer opened class="example-sidenav" mode="side">
+        <mat-selection-list #shoes [multiple]="false">
+            <mat-list-option *ngFor="let menu of menus" [value]="menu">
+                <a mat-list-item [routerLink]="menu.link" routerLinkActive="router-link-active">
+                    <div mat-list-item-content class="d-flex align-items-center text-white">
+                        <mat-icon mat-list-icon>{{ menu.icon }}</mat-icon>
+                        <div mat-line>{{menu.name}}</div>
+                    </div>
+                </a>
+            </mat-list-option>
+        </mat-selection-list>
     </mat-drawer>
 
     <div class="example-sidenav-content">
-        <app-page-header></app-page-header>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 
 </mat-drawer-container>

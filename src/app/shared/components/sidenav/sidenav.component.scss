@@ -3,6 +3,15 @@
     height: 100%;
 }
 
-.example-sidenav {
+.container {
     padding: 20px;
+}
+
+.example-sidenav {
+    width: 250px;
+    background: #33315f;
+}
+
+.mat-selection-list {
+    padding: 0;
 }
